@@ -1,0 +1,73 @@
+
+.buttons {
+    margin-top: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 130px;
+    color:wheat;
+    text-shadow: 2px 2px royalblue;
+    font-size: 2rem;
+}
+
+.menu {
+    padding: 46.5px;
+    margin-right: 5%;
+}
+
+.reservation {
+    padding: 46.5px;
+    margin-left: 5%;
+}
+
+.menu:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.reservation:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .buttons {
+        height: 100px;
+        font-size: 1rem;
+        text-align: center;
+   
+    }
+
+    .menu {
+        margin-right: 3%;
+        padding: 25px;
+    }
+
+    .reservation {
+        margin-left: 3%;
+        padding: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .buttons {
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .menu {
+        margin-left: 3%;
+        padding: 10px;
+    }
+
+    .reservation {
+        margin-right: 3%;
+        padding: 10px;
+    }
+}

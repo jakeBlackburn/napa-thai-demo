@@ -1,0 +1,71 @@
+app-photos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+   
+}
+
+.photos-container {
+    border-top: 2px solid slateblue;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    position: relative;
+}
+
+.photo {
+    object-fit: cover;
+    background-color: white;
+    height: 500px;
+    width: 100%;
+
+}
+
+//gallery title
+h3 {
+    font-size: 1.5rem;
+    font-family: papyrus;
+    padding-top: 30px;
+    padding-left: 20px;
+    color: rgb(255, 82, 82);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.885);
+    position: absolute;
+
+}
+
+
+
+//arrow images
+.arrow {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(121, 79, 79, 0.6);
+    border: 7px solid transparent;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .photos-container {
+        display: none;
+        position: absolute;
+    }
+
+    h3 {
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+
+
+<div class="map-container">
+    <div class="map-about">
+        <h4>Address:</h4>
+        <p>24 N Main St, Lexington, VA 24450</p>
+        <a href="https://www.google.com/maps/place/NapaThai+Cuisine/@37.7856397,-79.4437999,17z/data=!3m1!4b1!4m5!3m4!1s0x884ccbbbc4d9f823:0x8b2291715b2eeeb5!8m2!3d37.7856397!4d-79.4416112">See on Google Maps</a>
+    </div>
+    <div class="map" id="map">
+        <google-map 
+            height="450px"
+            width="100%"
+            [center]="center"
+            [zoom]="zoom">
+    
+            <map-marker [position]="center"></map-marker>
+        </google-map>
+    </div>
+</div>

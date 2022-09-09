@@ -1,0 +1,102 @@
+footer {
+    padding-bottom: 100px;
+    background-color: rgb(48, 30, 48);
+}
+
+address {
+    height: 300px;
+}
+
+.phone-numbers {
+    padding: 80px 10% 20px 10%;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    padding: 60px 10% 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+a {
+    color:whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+img {
+    padding-right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.yelp {
+    width: 30px;
+    height: 35px;
+}
+
+
+.facebook {
+    width: 50px;
+    height: 35px;
+}
+
+
+a:hover {
+    color: deepskyblue;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    address {
+        height: 200px;
+        padding-top: 30px;
+    }
+
+
+    p {
+        display: none;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .yelp {
+        width: 15px;
+        height: 20px;
+    }
+    
+    
+    .facebook {
+        width: 30px;
+        height: 20px;
+    }
+
+    .phone-numbers {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    a {
+        margin: 5px 0;
+    }
+
+    .links {
+        padding-top: 30px
+    }
+
+
+    
+}
