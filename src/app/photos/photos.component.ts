@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photos.component.scss']
 })
 export class PhotosComponent implements OnInit {
-  photoUrl = '../../assets/images/gallery-image-1.png';
+  photoUrl = '../../assets/images/gallery-image-1.webp';
   photoId = 1;
-  upperLimit = 4;
+  upperLimit = 3;
   constructor() { }
 
   ngOnInit(): void {
