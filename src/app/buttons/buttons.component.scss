@@ -9,65 +9,79 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.85);
-    height: 130px;
+    height: 100px;
     color:wheat;
     text-shadow: 2px 2px royalblue;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
-.menu {
-    padding: 46.5px;
-    margin-right: 5%;
+.menu, .reservation {
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+}
+
+.menu {  
+    left: 20%;
 }
 
 .reservation {
-    padding: 46.5px;
-    margin-left: 5%;
+    right: 20%
+}
+
+.menu:hover, .reservation:hover {
+    color: aqua;
+    font-size: 2rem;
+    bottom: 20px;
 }
 
 .menu:hover {
-    color: aqua;
-    cursor: pointer;
+    left: 19%;
 }
 
 .reservation:hover {
-    color: aquamarine;
-    cursor: pointer;
+    right: 19%;
 }
 
-@media screen and (max-width: 800px) {
+
+
+@media screen and (max-width: 900px) {
     .buttons {
-        height: 100px;
-        font-size: 1rem;
-        text-align: center;
-   
+        height: 90px;
+        font-size: 1.2rem;
     }
 
-    .menu {
-        margin-right: 3%;
-        padding: 25px;
-    }
-
-    .reservation {
-        margin-left: 3%;
-        padding: 25px;
+    .menu:hover, .reservation:hover {
+        font-size: 1.3rem;
+        bottom: 23px;
     }
     
 }
 
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 550px) {
     .buttons {
-        position: fixed;
-        bottom: 0px;
+        height: 80px;
+        font-size: 0.9rem;
     }
 
-    .menu {
-        margin-left: 3%;
-        padding: 10px;
+    .menu {  
+        left: 20px;
     }
-
+    
     .reservation {
-        margin-right: 3%;
-        padding: 10px;
+        right: 20px;
+    }
+
+    .menu:hover, .reservation:hover {
+        font-size: 1rem;
+    }
+    
+    .menu:hover {
+        left: 16px;
+    }
+    
+    .reservation:hover {
+        right: 16px;
     }
 }
