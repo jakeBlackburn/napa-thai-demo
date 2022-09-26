@@ -1,8 +1,6 @@
 
 <h3><em>Photo Gallery</em></h3>
 <div class="photos-container">
-    <img class="arrow left" src="../../assets/images/left-arrow.png" alt="previous image" (click)="decrementImage()">
-    <img class="photo" [src]="getBackgroundImage()">
-    <img class="arrow right" src="../../assets/images/right-arrow.png" alt="next image" (click)="incrementImage()">
+    <img class="photo" [src]="getBackgroundImage()" [@fadeIn]="isAnimating ? true : false" (@fadeIn.done)="isAnimating = true">
 </div>
 

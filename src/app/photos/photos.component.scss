@@ -8,7 +8,6 @@ app-photos {
 }
 
 .photos-container {
-    border-top: 2px solid slateblue;
     background-color: wheat;
     display: flex;
     justify-content: space-between;
@@ -22,7 +21,7 @@ app-photos {
     background-color: white;
     height: 500px;
     width: 100%;
-
+    animation: fadeIn 1s; 
 }
 
 //gallery title
@@ -56,6 +55,12 @@ h3 {
 .right {
     right: 20px;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0.1; }
+    100% { opacity: 1; }
+  }
+
 
 
 @media screen and (max-width: 800px) {
