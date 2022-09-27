@@ -1,48 +1,49 @@
 .header-container {
     margin: 0;
-    height: 620px;
+    height: 600px;
 }
 
 
 .header-top {
-    background-color: rgb(42,42,42);
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-img {
-    width: 350px;
-    margin-right: 5%;
-}
-
-.header-content {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100px;
     width: 100%;
-    margin-right: 5%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    font-family: papyrus;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 .bookmarks {
-   color:rgb(180, 220, 80);
+   color: wheat;
    text-decoration: none;
    font-size: 1.5rem;
+   margin: 10px;
+   text-transform: capitalize;
 }
 
 .bookmarks:hover {
-    color: aqua;
+    color: deepskyblue;
+    font-size: 1.6rem;
+}
+
+.contact:hover {
+    margin: 6px
+}
+
+.address:hover {
+    margin: 7px;
+}
+
+img {
+    height: 80px;
+    margin: 0 50px;
 }
 
 
 @media screen and (max-width: 925px) {
-    .header-top {
-        height: 100px;
-
-    }
-
     .bookmarks {
         font-size: 1rem;
     }
@@ -68,8 +69,8 @@ img {
     }
 
     img {
-        height: 100%;
-        margin: 0;
+        height: 40px;
+        margin: 0 10px;
     }
 }
 

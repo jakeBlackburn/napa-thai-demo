@@ -1,5 +1,4 @@
 
-<h3><em>Photo Gallery</em></h3>
 <div class="photos-container">
     <img class="photo" [src]="getBackgroundImage()" [@fadeIn]="isAnimating ? true : false" (@fadeIn.done)="isAnimating = true">
 </div>

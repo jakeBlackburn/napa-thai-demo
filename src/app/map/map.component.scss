@@ -3,13 +3,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(60, 125, 190, 0.3);
-}
-
-.map-about {
-    text-align: center;
-    width: 50%;
-    font-size: 1.5rem;
 }
 
 .map {
@@ -20,18 +13,35 @@
     border-radius: 3px;
 }
 
+.map-about {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.5rem;
+    height: 250px;
+}
+
+h4, p {
+    margin: 10px 0;
+}
+
 a {
     color: wheat;
     background-color: black;
-    border: 2px solid slateblue;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
+    margin-top: 20px;
     padding: 10px;
-    margin-top: 30px;
+    display: inline;
 }
 
+
 a:hover {
-    color: hotpink;
+    color: deepskyblue;
+    font-size: 1.6rem;
+    margin-top: 18px;
 }
 
 @media screen and (max-width: 800px) {
@@ -43,5 +53,15 @@ a:hover {
     .map-about {
         width: 100%;
         font-size: 1rem;
+        height: 200px;
+    }
+
+    a {
+        margin-top: 10px;
+    }
+
+    a:hover {
+        font-size: 1.1rem;
+        margin-top: 8px;
     }
 }
