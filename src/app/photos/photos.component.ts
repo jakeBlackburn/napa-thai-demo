@@ -20,8 +20,6 @@ export class PhotosComponent implements OnInit {
   photoUrl = '../../assets/images/gallery-image-1.webp';
   photoId = 1;
   upperLimit = 3;
-  constructor() { }
-
 
   ngOnInit(): void {
     setInterval(() => {
@@ -41,6 +39,4 @@ export class PhotosComponent implements OnInit {
   getBackgroundImage() {
     return `../../assets/images/gallery-image-${this.photoId}.webp`
   }
-
-
 }
